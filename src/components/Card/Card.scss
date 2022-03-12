@@ -1,0 +1,44 @@
+@use "../../styles/colors" as *;
+.card__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 700;
+  .card--type {
+    margin: 2rem 0 0;
+    font-size: 1.15rem;
+  }
+  .card--price {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 3.5rem;
+    margin: 1.25rem 0;
+    &::before {
+      content: "$";
+      font-size: 2rem;
+    }
+  }
+  .card--storage {
+    margin: 1rem 0;
+  }
+  .card--users-allowed {
+    margin: 1rem 0;
+  }
+  .card--limit {
+    margin: 1rem 0;
+  }
+  .card--button {
+    max-width: 250px;
+    width: 100%;
+    margin: 1rem 0;
+    box-shadow: none;
+    letter-spacing: 0.025rem;
+    filter: drop-shadow(0);
+    &:hover {
+      box-shadow: none;
+      filter: drop-shadow(0);
+    }
+  }
+}

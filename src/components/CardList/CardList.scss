@@ -1,0 +1,68 @@
+@use "../../styles/colors" as *;
+
+.cardlist__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  list-style: none;
+  z-index: 9999;
+  width: 100%;
+  @media screen and (max-width: 925px) {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  li {
+    width: 100%;
+    max-width: 350px;
+    min-width: 300px;
+    border-radius: 0.5rem;
+    background: $white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    color: $grayishBlue;
+    .card--hr {
+      height: 2px;
+      border-radius: 1px;
+      background: $veryLightGrayish;
+      display: inline-block;
+      max-width: 250px;
+      width: 100%;
+    }
+    .card--button {
+      background: hsl(237, 63%, 64%);
+      color: $white;
+      font-weight: 700;
+      border: 1px solid hsl(237, 63%, 64%);
+      &:hover {
+        background: none;
+        color: hsl(237, 63%, 64%);
+      }
+    }
+  }
+  li:nth-child(2) {
+    background: $mainCardBackground;
+    color: $white;
+    padding: 1.5rem 0;
+    .card--hr {
+      height: 2px;
+      border-radius: 1px;
+      background: hsl(236, 72%, 79%);
+      display: inline-block;
+      max-width: 250px;
+      width: 100%;
+    }
+    .card--button {
+      background: $white;
+      color: hsl(237, 63%, 64%);
+      font-weight: 700;
+      border: 1px solid $white;
+      &:hover {
+        background: none;
+        color: $white;
+        border: 1px solid $white;
+      }
+    }
+  }
+}

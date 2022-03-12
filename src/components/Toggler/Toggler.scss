@@ -1,0 +1,17 @@
+@use "../../styles/colors" as *;
+.pricing-switch {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  margin: 3rem 0;
+  .switch--text {
+    color: $lightGrayishBlue;
+    font-weight: 700;
+    font-size: 0.85rem;
+  }
+  .Switch.Mui-disabled {
+    background-color: red;
+  }
+}

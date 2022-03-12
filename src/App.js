@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.scss";
+import Toggler from "./components/Toggler/Toggler";
+import CardList from "./components/CardList/CardList";
 
 function App() {
+  const [switchState, setSwitchState] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main">
+      <h1>Our pricing</h1>
+      <Toggler
+        onClick={() => {
+          setSwitchState(!switchState);
+        }}
+      />
+      <CardList switchState={switchState} />
     </div>
   );
 }
