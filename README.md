@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Live page link
+
+[Live website on Github Pages](https://zydrunasrimkus.github.io/pricing-component-with-toggle/)
+
 ## Available Scripts
 
 In the project directory, you can run:
